@@ -1,11 +1,15 @@
 import { Building, Users, Plane, Coffee, Heart } from "lucide-react";
 import mallImg from "../assets/mall_screen.jpg";
-
+import hospital from "../assets/Hospital.jpeg";
+import airport from "../assets/perfectFlight.jpeg";
+import business from "../assets/business.jpeg";
+import breaktime from "../assets/breaktime.jpeg";
+import apartments from "../assets/apartments.jpeg";
 export const screensData = [
   {
     title: "Luxury Apartments",
     description: "Premium residential complexes with high-income demographics",
-    image: mallImg,
+    image: apartments,
     icon: <Building className="h-6 w-6 text-primary" />,
   },
   {
@@ -17,19 +21,19 @@ export const screensData = [
   {
     title: "Airports",
     description: "International travelers and business professionals",
-    image: mallImg,
+    image: airport,
     icon: <Plane className="h-6 w-6 text-primary" />,
   },
   {
     title: "Corporate Cafeterias",
     description: "Professional workforce during break times",
-    image: mallImg,
+    image: breaktime,
     icon: <Coffee className="h-6 w-6 text-primary" />,
   },
   {
     title: "Hospitals",
     description: "Healthcare facilities with extended dwell times",
-    image: mallImg,
+    image: hospital,
     icon: <Heart className="h-6 w-6 text-primary" />,
   },
 ];

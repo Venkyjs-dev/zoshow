@@ -56,7 +56,8 @@ export default function AddSection() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="group cursor-pointer transition-all duration-300">
+                className="group cursor-pointer transition-all duration-300"
+              >
                 <div className="bg-gradient-to-r from-slate-50 to-blue-50 border border-slate-200 p-6 rounded-xl shadow-sm hover:shadow-md">
                   <div className="flex items-start gap-5">
                     <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-300">
@@ -84,7 +85,7 @@ export default function AddSection() {
                     <p className="text-lg text-gray-800/80">
                       Planning to deploy{" "}
                       <span className="font-bold text-xl text-blue-600">
-                        100 screens
+                        500 screens
                       </span>{" "}
                       across Bangalore and Amaravathi, laying the foundation for
                       a comprehensive digital advertising network.
