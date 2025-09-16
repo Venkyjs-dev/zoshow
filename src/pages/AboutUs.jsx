@@ -4,7 +4,8 @@ export default function AboutUs() {
   return (
     <section
       id="about"
-      className="py-24 px-4 sm:px-8 bg-gradient-to-r from-[#0f172a] to-[#1e293b] text-white">
+      className="py-24 px-4 sm:px-8 bg-gradient-to-r from-[#0f172a] to-[#1e293b] text-white"
+    >
       <div className="max-w-[120rem] mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
@@ -17,7 +18,8 @@ export default function AboutUs() {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                strokeWidth={2}>
+                strokeWidth={2}
+              >
                 <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                 <circle cx="9" cy="7" r="4"></circle>
                 <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
@@ -52,7 +54,7 @@ export default function AboutUs() {
                 </h3>
                 <p className="font-paragraph text-lg opacity-90">
                   To establish ZoShow as a leading digital advertising platform
-                  in South India, starting with Bangalore and Amaravathi, and
+                  in India, starting with Bangalore and Amaravathi, and
                   expanding to connect brands with their target audiences
                   through strategic premium location partnerships.
                 </p>
@@ -70,7 +72,8 @@ export default function AboutUs() {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  strokeWidth={2}>
+                  strokeWidth={2}
+                >
                   <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                   <circle cx="9" cy="7" r="4"></circle>
                   <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
@@ -78,14 +81,13 @@ export default function AboutUs() {
                 </svg>
               </div>
               <h3 className="text-2xl font-heading font-semibold mb-4">
-                Founded by D Anil Kumar &amp; S Sudha
+                Founded by Anil &amp; Sudha
               </h3>
               <p className="font-paragraph opacity-90">
-                ZoShow was founded by D Anil Kumar (Founder) and S Sudha
-                (Co-founder), entrepreneurs with a vision to transform digital
-                advertising in South India. Committed to building innovative
-                solutions that connect brands with consumers through strategic
-                technology deployment.
+                ZoShow was founded by Anil (Founder) and Sudha (Co-founder),
+                entrepreneurs with a vision to transform digital advertising in
+                India. Committed to building innovative solutions that connect
+                brands with consumers through strategic technology deployment.
               </p>
             </div>
           </div>
