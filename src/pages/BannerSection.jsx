@@ -8,7 +8,7 @@ import {
   Timer,
 } from "lucide-react";
 
-export default function BannerSection() {
+export default function BannerSection({ id }) {
   return (
     <section
       id="home"

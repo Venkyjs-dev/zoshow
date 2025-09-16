@@ -47,7 +47,7 @@ const features = [
 export default function FeaturesSection() {
   return (
     <section
-      id="features"
+      id="services"
       className="relative py-32 px-6 max-w-[120rem] mx-auto overflow-hidden">
       {/* floating gradient blobs */}
       <div className="absolute inset-0 -z-10">

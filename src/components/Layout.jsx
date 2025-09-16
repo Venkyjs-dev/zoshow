@@ -18,9 +18,9 @@ export default function Layout() {
     <>
       {/* Navbar always at top */}
       <Navbar />
-      <main>
+      {/* <main>
         <Outlet />
-      </main>
+      </main> */}
       <BannerSection />
       <AddSection />
       <SolutionsSection />
