@@ -23,7 +23,7 @@ export default function Layout() {
       </main> */}
       <BannerSection />
       <AddSection />
-      <SolutionsSection />
+      {/* <SolutionsSection /> */}
       <FeaturesSection />
       <MarketSection />
       <ScreensSection />

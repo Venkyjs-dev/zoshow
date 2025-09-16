@@ -57,16 +57,19 @@ export default function ScreensSection() {
         ref={scrollRef}
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
-        className="relative z-10 flex gap-6 overflow-x-auto pb-6 scrollbar-hide snap-x snap-mandatory">
+        className="relative z-10 flex gap-6 overflow-x-auto pb-6 scrollbar-hide snap-x snap-mandatory"
+      >
         {screensData.map((item) => (
           <motion.div
             key={item.title}
             whileHover={{ y: -8 }}
-            className="flex-shrink-0 w-80 snap-start group">
+            className="flex-shrink-0 w-80 snap-start group"
+          >
             <div
               className="relative overflow-hidden rounded-3xl border border-gray-200
                          bg-white shadow-md transition-shadow duration-300
-                         group-hover:shadow-2xl group-hover:border-gray-300">
+                         group-hover:shadow-2xl group-hover:border-gray-300"
+            >
               {/* semi-transparent gradient for better text/icon contrast */}
               <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/10 pointer-events-none rounded-3xl" />
 
@@ -76,7 +79,7 @@ export default function ScreensSection() {
               </div>
 
               {/* image with hover zoom */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-64 overflow-hidden">
                 <motion.img
                   src={item.image}
                   alt={item.title}
@@ -86,7 +89,8 @@ export default function ScreensSection() {
                 <motion.div
                   className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-2 shadow-md"
                   animate={{ scale: [1, 1.1, 1] }}
-                  transition={{ duration: 2, repeat: Infinity }}>
+                  transition={{ duration: 2, repeat: Infinity }}
+                >
                   {item.icon}
                 </motion.div>
               </div>
