@@ -1,16 +1,45 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [height, setHeight] = useState("0px");
+  const [active, setActive] = useState("home");
 
-  const navItems = ["Home", "About", "Services", "Contact"];
+  const navItems = [
+    { name: "Home", id: "home" },
+    { name: "About", id: "about" },
+    { name: "Services", id: "services" },
+    { name: "Contact", id: "contact" },
+  ];
 
   useEffect(() => {
-    if (isOpen) setHeight(`${navItems.length * 48}px`); // each link ~48px
+    if (isOpen) setHeight(`${navItems.length * 48}px`);
     else setHeight("0px");
+
+    // Optional: track scroll to update active link
+    const handleScroll = () => {
+      navItems.forEach(({ id }) => {
+        const section = document.getElementById(id);
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= 80 && rect.bottom >= 80) {
+            setActive(id);
+          }
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [isOpen]);
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+      setIsOpen(false); // close mobile menu after click
+    }
+  };
 
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
@@ -22,7 +51,6 @@ export default function Navbar() {
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
-              viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
               strokeWidth="2"
@@ -41,14 +69,21 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center gap-8">
-          {navItems.map((item) => (
-            <Link
-              key={item}
-              to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-              className="relative font-paragraph text-midnight-navy/80 hover:text-blue-600 transition-colors duration-300 group">
-              {item}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
-            </Link>
+          {navItems.map(({ name, id }) => (
+            <button
+              key={id}
+              onClick={() => scrollToSection(id)}
+              className={`relative font-paragraph transition-colors duration-300 ${
+                active === id
+                  ? "text-blue-600"
+                  : "text-midnight-navy/80 hover:text-blue-600"
+              }`}>
+              {name}
+              <span
+                className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 ${
+                  active === id ? "w-full" : ""
+                }`}></span>
+            </button>
           ))}
         </nav>
 
@@ -85,16 +120,14 @@ export default function Navbar() {
         style={{ maxHeight: height }}
         className="md:hidden overflow-hidden transition-all duration-500 bg-white">
         <div className="max-w-[120rem] mx-auto px-6 flex flex-col gap-4 py-4">
-          {navItems.map((item, idx) => (
-            <Link
-              key={item}
-              to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+          {navItems.map(({ name, id }, idx) => (
+            <button
+              key={id}
+              onClick={() => scrollToSection(id)}
               className="block font-paragraph text-midnight-navy/90 hover:text-blue-600 transition-all duration-300"
-              onClick={() => setIsOpen(false)}
-              style={{ transitionDelay: `${idx * 100}ms` }} // stagger effect
-            >
-              {item}
-            </Link>
+              style={{ transitionDelay: `${idx * 100}ms` }}>
+              {name}
+            </button>
           ))}
         </div>
       </div>
