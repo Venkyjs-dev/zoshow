@@ -3,10 +3,10 @@ import { CheckCircle2 } from "lucide-react";
 
 export default function MarketSection() {
   const stats = [
-    { year: 2022, value: "₹400 Cr", width: "w-1/3" },
-    { year: 2023, value: "₹600 Cr", width: "w-1/2" },
-    { year: 2024, value: "₹800 Cr", width: "w-2/3" },
-    { year: 2025, value: "₹1,200 Cr", width: "w-full" },
+    { year: 2022, value: "₹1,800 Cr", width: "w-1/3" },
+    { year: 2024, value: "₹2,300 Cr", width: "w-1/2" },
+    { year: 2025, value: "₹2,600 Cr", width: "w-2/3" },
+    { year: 2030, value: "₹5,000 Cr", width: "w-full" },
   ];
 
   return (
@@ -15,18 +15,25 @@ export default function MarketSection() {
         {/* ---- Left text content ---- */}
         <div>
           <h2 className="text-4xl md:text-5xl font-bold text-[#0F172A] mb-8">
-            Massive Market Opportunity
+            {/* Massive Market Opportunity */}
+            Massive Market Opportunity in Digital Out-of-Home (DOOH)
           </h2>
           <p className="text-lg md:text-xl text-[#0F172A]/80 mb-8">
-            The Digital Out-of-Home (DOOH) advertising market in India is
+            {/* The Digital Out-of-Home (DOOH) advertising market in India is
             experiencing explosive growth, projected to reach ₹1,200 crores by
-            2025.
+            2025. */}
+            India’s DOOH market is already worth ₹2,300 Cr in 2024 and is
+            projected to cross ₹5,000 Cr by 2030 (CAGR ~14%)【MarkNtel Advisors
+            / Mordor Intelligence】. With rapid mall growth (16.6M sq ft new
+            space by 2026) and 271 operational Tier-1 malls, advertisers are
+            shifting fast to indoor digital formats.
           </p>
           <ul className="space-y-4">
             {[
-              "35% annual growth rate in DOOH advertising",
-              "First AI-powered platform in premium locations",
-              "Untapped potential in major metropolitan areas",
+              "₹2,300 Cr market today, doubling to ₹5,000 Cr by 2030",
+              "271 malls in Tier-1 cities + new Grade-A retail space coming online",
+              "ndoor environments (apartments, hospitals, cafés, malls) = high dwell time & trust",
+              "ZoShow: India’s first AI-powered indoor DOOH network",
             ].map((item) => (
               <li key={item} className="flex items-center gap-3">
                 <CheckCircle2 className="h-6 w-6 text-teal-500" />
@@ -49,7 +56,8 @@ export default function MarketSection() {
                   <div className="relative flex-1 mx-4 h-3 rounded-full bg-[#DAD9E8] overflow-hidden">
                     {/* filled bar */}
                     <div
-                      className={`h-3 rounded-full bg-gradient-to-r from-indigo-500 to-teal-500 ${s.width}`}>
+                      className={`h-3 rounded-full bg-gradient-to-r from-indigo-500 to-teal-500 ${s.width}`}
+                    >
                       {/* moving shine */}
                       <motion.div
                         className="absolute top-0 left-0 h-full w-1/3 bg-gradient-to-r from-white/20 via-white/60 to-white/20"

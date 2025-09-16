@@ -5,7 +5,7 @@ const features = [
   {
     icon: <Monitor className="w-8 h-8 text-white" />,
     title: "Digital Screen Network",
-    desc: "Network of 100+ premium digital screens across Bangalore & Amaravathi for maximum visibility.",
+    desc: "Network of 500+ premium digital screens across Bangalore & Amaravathi for maximum visibility.",
     border: "from-blue-400 to-cyan-400",
     iconBg: "from-blue-500 to-cyan-500",
     hover: "hover:shadow-blue-400/50",
@@ -48,7 +48,8 @@ export default function FeaturesSection() {
   return (
     <section
       id="services"
-      className="relative py-32 px-6 max-w-[120rem] mx-auto overflow-hidden">
+      className="relative py-32 px-6 max-w-[120rem] mx-auto overflow-hidden"
+    >
       {/* floating gradient blobs */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-full blur-3xl" />
@@ -61,7 +62,8 @@ export default function FeaturesSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="text-center mb-20 relative z-10">
+        className="text-center mb-20 relative z-10"
+      >
         <div className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 px-6 py-3 rounded-full border border-blue-500/20 mb-6">
           <Monitor className="h-5 w-5 text-blue-600" />
           <span className="text-sm font-semibold text-blue-600">
@@ -90,18 +92,21 @@ export default function FeaturesSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
             whileHover={{ y: -6 }}
-            className="group cursor-pointer">
+            className="group cursor-pointer"
+          >
             <div
               className={`
                 relative overflow-hidden rounded-2xl p-[1px]
                 bg-gradient-to-br ${f.border}
                 shadow-sm transition-transform duration-500
                 ${f.hover}
-              `}>
+              `}
+            >
               {/* glass layer */}
               <div className="bg-white/80 backdrop-blur-xl rounded-2xl p-8 h-full flex flex-col transition duration-300">
                 <div
-                  className={`w-16 h-16 bg-gradient-to-r ${f.iconBg} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                  className={`w-16 h-16 bg-gradient-to-r ${f.iconBg} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
+                >
                   {f.icon}
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 group-hover:text-gray-800 transition-colors">
@@ -119,7 +124,8 @@ export default function FeaturesSection() {
                     className="h-4 w-4 text-gray-900"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="currentColor">
+                    stroke="currentColor"
+                  >
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
                   </svg>
@@ -136,7 +142,8 @@ export default function FeaturesSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="mt-20 text-center relative z-10">
+        className="mt-20 text-center relative z-10"
+      >
         <div className="bg-white/70 backdrop-blur-xl border border-blue-200 p-10 rounded-2xl shadow-md inline-block">
           <h3 className="text-3xl font-bold text-gray-900 mb-3">
             Ready to Join Our Network?
