@@ -5,8 +5,7 @@ export default function ContactUs() {
   return (
     <section
       id="contact"
-      className="py-20 px-4 sm:px-8 bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white"
-    >
+      className="py-20 px-4 sm:px-8 bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white">
       <div className="max-w-[120rem] mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -17,8 +16,7 @@ export default function ContactUs() {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              strokeWidth={2}
-            >
+              strokeWidth={2}>
               <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
               <path d="M12 18h.01"></path>
             </svg>
@@ -77,8 +75,7 @@ export default function ContactUs() {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  strokeWidth={2}
-                >
+                  strokeWidth={2}>
                   <circle cx="12" cy="12" r="10"></circle>
                   <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                   <path d="M2 12h20"></path>
@@ -90,8 +87,7 @@ export default function ContactUs() {
                 </h3>
                 <a
                   href="mailto:ask@zoshow.in"
-                  className="font-paragraph text-cyan-300 hover:text-cyan-200 transition-colors duration-300"
-                >
+                  className="font-paragraph text-cyan-300 hover:text-cyan-200 transition-colors duration-300">
                   ask@zoshow.in
                 </a>
               </div>
@@ -106,8 +102,7 @@ export default function ContactUs() {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  strokeWidth={2}
-                >
+                  strokeWidth={2}>
                   <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
                   <path d="M12 18h.01"></path>
                 </svg>
@@ -118,8 +113,7 @@ export default function ContactUs() {
                 </h3>
                 <a
                   href="tel:+917287843240"
-                  className="font-paragraph text-cyan-300 hover:text-cyan-200 transition-colors duration-300"
-                >
+                  className="font-paragraph text-cyan-300 hover:text-cyan-200 transition-colors duration-300">
                   +91 72878 43240
                 </a>
               </div>
@@ -134,8 +128,7 @@ export default function ContactUs() {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  strokeWidth={2}
-                >
+                  strokeWidth={2}>
                   <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
