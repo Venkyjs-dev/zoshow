@@ -137,7 +137,8 @@ export default function FeaturesSection() {
       </div>
 
       {/* CTA */}
-      <motion.div
+      {/*Note: Temporarly commented */}
+      {/* <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -156,7 +157,7 @@ export default function FeaturesSection() {
             Request Demo
           </button>
         </div>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 }

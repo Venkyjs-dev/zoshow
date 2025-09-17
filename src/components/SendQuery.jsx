@@ -90,7 +90,8 @@ export default function SendQuery() {
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
-          strokeWidth={2}>
+          strokeWidth={2}
+        >
           <rect width="20" height="16" x="2" y="4" rx="2"></rect>
           <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
         </svg>
@@ -109,7 +110,8 @@ export default function SendQuery() {
         <div>
           <label
             htmlFor="name"
-            className="text-sm font-paragraph font-medium mb-2 block text-white">
+            className="text-sm font-paragraph font-medium mb-2 block text-white"
+          >
             Name *
           </label>
           <input
@@ -132,7 +134,8 @@ export default function SendQuery() {
         <div>
           <label
             htmlFor="email"
-            className="text-sm font-paragraph font-medium mb-2 block text-white">
+            className="text-sm font-paragraph font-medium mb-2 block text-white"
+          >
             Email Address *
           </label>
           <input
@@ -155,14 +158,15 @@ export default function SendQuery() {
         <div>
           <label
             htmlFor="phone"
-            className="text-sm font-paragraph font-medium mb-2 block text-white">
+            className="text-sm font-paragraph font-medium mb-2 block text-white"
+          >
             Phone Number *
           </label>
           <input
             type="tel"
             id="phone"
             name="phone"
-            placeholder="+91 98765 43210"
+            placeholder="+91 0000000000"
             value={formData.phone}
             onChange={handleChange}
             className={`flex h-10 w-full rounded-md border px-4 py-1 text-base shadow-sm transition-colors hover:border-foreground/30 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 bg-white/10 border-white/20 text-white placeholder:text-white/60 ${
@@ -178,7 +182,8 @@ export default function SendQuery() {
         <div>
           <label
             htmlFor="requirements"
-            className="text-sm font-paragraph font-medium mb-2 block text-white">
+            className="text-sm font-paragraph font-medium mb-2 block text-white"
+          >
             Your Requirements *
           </label>
           <textarea
@@ -190,7 +195,8 @@ export default function SendQuery() {
             onChange={handleChange}
             className={`flex w-full min-h-[60px] rounded-md border px-3 py-2 text-base shadow-sm hover:border-foreground/30 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 bg-white/10 border-white/20 text-white placeholder:text-white/60 resize-none ${
               errors.requirements ? "border-red-500" : ""
-            }`}></textarea>
+            }`}
+          ></textarea>
           {errors.requirements && (
             <p className="text-red-500 text-sm mt-1">{errors.requirements}</p>
           )}
@@ -201,7 +207,8 @@ export default function SendQuery() {
           <button
             type="submit"
             disabled={loading}
-            className="inline-flex items-center justify-center gap-2 w-full h-10 text-white font-heading font-semibold px-8 py-4 rounded-lg shadow-sm bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 transition-all disabled:opacity-50">
+            className="inline-flex items-center justify-center gap-2 w-full h-10 text-white font-heading font-semibold px-8 py-4 rounded-lg shadow-sm bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 transition-all disabled:opacity-50"
+          >
             {loading ? "Sending..." : "Send Query"}
           </button>
 

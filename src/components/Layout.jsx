@@ -25,7 +25,8 @@ export default function Layout() {
       <AddSection />
       {/* <SolutionsSection /> */}
       <FeaturesSection />
-      <MarketSection />
+      {/*Note:Temporarly commented
+      <MarketSection />*/}
       <ScreensSection />
       <PlatformWorkflow />
       <AboutUs />

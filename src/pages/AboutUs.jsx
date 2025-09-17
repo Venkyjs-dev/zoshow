@@ -63,7 +63,8 @@ export default function AboutUs() {
           </div>
 
           {/* Right Card */}
-          <div className="text-center">
+          {/*Note: Temporarly commented */}
+          {/* <div className="text-center">
             <div className="border text-foreground bg-white/10 backdrop-blur-sm border-white/20 p-8 rounded-2xl hover:scale-[1.02] transition-transform">
               <div className="w-32 h-32 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl mx-auto mb-6 flex items-center justify-center">
                 <svg
@@ -90,7 +91,7 @@ export default function AboutUs() {
                 brands with consumers through strategic technology deployment.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -106,7 +106,7 @@ export default function AddSection() {
               className="w-full rounded-2xl shadow-lg relative z-10 transition-shadow duration-300 group-hover:shadow-xl"
             />
             {/* floating badge top-right */}
-            <div className="absolute -top-4 -right-4 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl p-4 shadow-lg border border-blue-400/30 animate-bounce">
+            <div className="absolute -top-10 -right-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl p-4 shadow-lg border border-blue-400/30 animate-bounce">
               <div className="flex items-center gap-3">
                 <div className="w-3 h-3 bg-white rounded-full"></div>
                 <span className="text-sm font-semibold text-white">
@@ -115,7 +115,7 @@ export default function AddSection() {
               </div>
             </div>
             {/* floating badge bottom-left */}
-            <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl p-4 shadow-lg text-white border border-blue-400/30 animate-bounce delay-150">
+            <div className="absolute -bottom-16 -left-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl p-4 shadow-lg text-white border border-blue-400/30 animate-bounce delay-150">
               <div className="flex items-center gap-3">
                 <Brain className="h-5 w-5" />
                 <span className="text-sm font-semibold">AI Optimization</span>

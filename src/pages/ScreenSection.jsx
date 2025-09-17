@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import { screensData } from "../data/screenData";
 
 export default function ScreensSection() {
-  const scrollRef = useRef(null);
+  {
+    /*const scrollRef = useRef(null);
   const [isPaused, setIsPaused] = useState(false);
 
   // Auto-scroll effect
@@ -12,7 +13,7 @@ export default function ScreensSection() {
     const step = () => {
       if (!isPaused && scrollRef.current) {
         const el = scrollRef.current;
-        el.scrollLeft += 0.5; // speed: adjust if you want faster/slower
+        el.scrollLeft += 0.5; // speed: adjust if you want faster/slower        //useEffect and useRef are No need for natural scroll 
         // reset to start when reaching the end
         if (el.scrollLeft >= el.scrollWidth - el.clientWidth) {
           el.scrollLeft = 0;
@@ -23,7 +24,8 @@ export default function ScreensSection() {
     raf = requestAnimationFrame(step);
     return () => cancelAnimationFrame(raf);
   }, [isPaused]);
-
+*/
+  }
   return (
     <section className="relative py-24 px-6 lg:px-12 max-w-[120rem] mx-auto">
       {/* decorative background images */}
@@ -54,10 +56,10 @@ export default function ScreensSection() {
 
       {/* scrolling cards */}
       <div
-        ref={scrollRef}
-        onMouseEnter={() => setIsPaused(true)}
-        onMouseLeave={() => setIsPaused(false)}
-        className="relative z-10 flex gap-6 overflow-x-auto pb-6 scrollbar-hide snap-x snap-mandatory"
+        //   ref={scrollRef}
+        // onMouseEnter={() => setIsPaused(true)}
+        // onMouseLeave={() => setIsPaused(false)}
+        className="relative z-10 flex gap-6 overflow-x-auto pb-6 scrollbar-hide snap-x snap-mandatory scroll-smooth"
       >
         {screensData.map((item) => (
           <motion.div
