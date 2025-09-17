@@ -3,19 +3,19 @@ import mallImg from "../assets/mall_screen.jpg";
 import hospital from "../assets/Hospital.jpeg";
 import airport from "../assets/perfectFlight.jpeg";
 import business from "../assets/business.jpeg";
-import breaktime from "../assets/breaktime.jpeg";
-import apartments from "../assets/apartments.jpeg";
+import apartment from "../assets/luxurary_apartments.jpeg";
+import malls from "../assets/malls.jpeg";
 export const screensData = [
   {
     title: "Luxury Apartments",
     description: "Premium residential complexes with high-income demographics",
-    image: apartments,
+    image: apartment,
     icon: <Building className="h-6 w-6 text-primary" />,
   },
   {
     title: "Shopping Malls",
     description: "High-traffic retail environments with diverse audiences",
-    image: mallImg,
+    image: malls,
     icon: <Users className="h-6 w-6 text-primary" />,
   },
   {
@@ -27,7 +27,7 @@ export const screensData = [
   {
     title: "Corporate Cafeterias",
     description: "Professional workforce during break times",
-    image: breaktime,
+    image: business,
     icon: <Coffee className="h-6 w-6 text-primary" />,
   },
   {

@@ -12,7 +12,8 @@ export default function BannerSection({ id }) {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-[#0a0f1e] via-slate-900 to-blue-900 text-white overflow-hidden py-16 pt-24">
+      className="relative min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-[#0a0f1e] via-slate-900 to-blue-900 text-white overflow-hidden py-16 pt-24"
+    >
       {/* blurred background blobs */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
@@ -49,18 +50,25 @@ export default function BannerSection({ id }) {
         </p>
 
         {/* CTA buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 justify-center">
-          <button className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:from-cyan-400 hover:to-blue-500 font-semibold px-10 py-5 rounded-lg text-lg shadow-lg transition-colors">
+        {/*Note: Temporarly commented */}
+        {/* <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <button
+           
+            className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:from-cyan-400 hover:to-blue-500 font-semibold px-10 py-5 rounded-lg text-lg shadow-lg transition-colors"
+          >
             <Calendar className="h-5 w-5" />
             Schedule Demo
             <ArrowRight className="h-5 w-5" />
           </button>
 
-          <button className="inline-flex items-center justify-center gap-2 border-2 border-white/50 text-white hover:bg-white/10 hover:border-white font-semibold px-10 py-5 rounded-lg text-lg backdrop-blur-sm transition-colors">
+          <button
+            
+            className="inline-flex items-center justify-center gap-2 border-2 border-white/50 text-white hover:bg-white/10 hover:border-white font-semibold px-10 py-5 rounded-lg text-lg backdrop-blur-sm transition-colors"
+          >
             <Play className="h-5 w-5" />
             View Platform
           </button>
-        </div>
+        </div> */}
 
         {/* highlights */}
         <div className="mt-16 flex flex-wrap justify-center items-center gap-8 opacity-80">

@@ -42,7 +42,8 @@ export default function ContactUs() {
           {/* Left Cards */}
           <div className="flex-1 flex flex-col gap-8">
             {/* Founder Card */}
-            <div className="flex items-center gap-6 p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 hover:scale-[1.02] transition-transform w-full">
+            {/*Note: Temporarly commented */}
+            {/* <div className="flex items-center gap-6 p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 hover:scale-[1.02] transition-transform w-full">
               <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +66,7 @@ export default function ContactUs() {
                 <p className="font-paragraph opacity-90">Anil (Founder)</p>
                 <p className="font-paragraph opacity-90">Sudha (Co-founder)</p>
               </div>
-            </div>
+            </div> */}
 
             {/* Email Card */}
             <div className="flex items-center gap-6 p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 hover:scale-[1.02] transition-transform w-full">
