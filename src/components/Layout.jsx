@@ -12,6 +12,7 @@ import FeaturesSection from "../pages/FeaturesSection";
 import SolutionsSection from "../pages/SolutionsSection";
 import AddSection from "../pages/AddSection";
 import BannerSection from "../pages/BannerSection";
+import TestimonialsSection from "../pages/TestimonialsSection"; // Import the file
 
 export default function Layout() {
   return (
@@ -25,6 +26,7 @@ export default function Layout() {
       <AddSection />
       {/* <SolutionsSection /> */}
       <FeaturesSection />
+      <TestimonialsSection />
       {/*Note:Temporarly commented
       <MarketSection />*/}
       <ScreensSection />
